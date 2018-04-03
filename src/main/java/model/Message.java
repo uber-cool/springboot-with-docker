@@ -1,10 +1,11 @@
 package model;
 
-import lombok.AllArgsConstructor;
+import java.util.UUID;
 import lombok.Data;
 
 @Data
-@AllArgsConstructor
 public class Message {
-  private String message;
+
+  private UUID messageId;
+  private String messageText;
 }

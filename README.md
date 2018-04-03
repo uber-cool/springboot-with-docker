@@ -23,8 +23,7 @@ docker run -d -p 8080:8080 --name webapp myimage
 6. Check if container created successfully `docker ps`
 Failed/stopped containers can be listed by `docker ps -a`
 7. Point you browser to  
-http://localhost:8080/greeting  
-http://localhost:8080/greeting?message=Docker%20Expert
+http://localhost:8080/swagger-ui.html
 
 **Log into the running container**
 ```

@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: "Spring Boot With Docker"
+
+swagger:
+  title: "Spring Boot With Docker API"
+  description: "Hello world example of springboot application in docker"
