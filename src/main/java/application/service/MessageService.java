@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
-import model.Message;
+import application.model.Message;
 import org.springframework.stereotype.Service;
 
 @Service
