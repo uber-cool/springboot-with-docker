@@ -11,7 +11,7 @@
   <properties>
     <java.version>1.8</java.version>
     <docker.image.prefix>myapp</docker.image.prefix>
-    <swagger.version>2.8.0</swagger.version>
+    <swagger.version>2.9.2</swagger.version>
   </properties>
 
   <parent>

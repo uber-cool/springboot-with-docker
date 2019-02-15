@@ -8,3 +8,4 @@ spring:
 swagger:
   title: "Spring Boot With Docker API"
   description: "Hello world example of springboot application in docker"
+  base-package: application.controller

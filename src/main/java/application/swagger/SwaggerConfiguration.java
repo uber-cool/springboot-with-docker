@@ -21,11 +21,14 @@ public class SwaggerConfiguration {
   @Value("${swagger.description}")
   private String swaggerDescription;
 
+  @Value("${swagger.base-package}")
+  private String basePackage;
+
   @Bean
   public Docket swaggerSettings(){
     return new Docket(DocumentationType.SWAGGER_2)
         .select()
-        .apis(RequestHandlerSelectors.basePackage("application.controller"))
+        .apis(RequestHandlerSelectors.basePackage(basePackage))
         .build()
         .apiInfo(apiInfo());
   }
