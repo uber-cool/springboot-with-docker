@@ -9,20 +9,24 @@
 **Steps to run the application**
 1. Open Docker Quickstart Terminal
 2. Move to the directory where you have cloned the repo in the terminal
-3. Run below command to start the container.  
-This will create an image from the provided [docker file](/Dockerfile)
 ```
 docker build -t myimage .
 ```
+This will create an image from the provided [docker file](/Dockerfile)
 
-4. List all the images with the command `docker images`
-5. Create and run the container using the image created
+3. List all the images with the command `docker images`
+4. Create and run the container using the image created
+To see the console
+```bash
+docker run -p 8080:8080 --name webapp myimage
+```
+To run in background
 ```bash
 docker run -d -p 8080:8080 --name webapp myimage
 ```
-6. Check if container created successfully `docker ps`
+5. Check if container created successfully `docker ps`
 Failed/stopped containers can be listed by `docker ps -a`
-7. Point you browser to  
+6. Point you browser to  
 http://localhost:8080/swagger-ui.html
 
 **Log into the running container**
